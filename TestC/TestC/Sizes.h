@@ -1,17 +1,16 @@
 //
-//  main.c
+//  Sizes.h
 //  TestC
 //
 //  Created by Gene on 4/12/17.
 //  Copyright © 2017 IDAP. All rights reserved.
 //
 
+#ifndef Sizes_h
+#define Sizes_h
+
 #include <stdio.h>
 
-#include "Sizes.h"
+void printSizes();
 
-int main(int argc, const char * argv[]) {
-    printSizes();
-    
-    return 0;
-}
+#endif /* Sizes_h */
