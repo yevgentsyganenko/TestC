@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B01127D11E9EB8CE00F717A3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B01127D01E9EB8CE00F717A3 /* main.c */; };
 		B01127D91E9EB9FE00F717A3 /* Sizes.c in Sources */ = {isa = PBXBuildFile; fileRef = B01127D71E9EB9FE00F717A3 /* Sizes.c */; };
+		B01127DC1E9EC41200F717A3 /* MamaPapa.c in Sources */ = {isa = PBXBuildFile; fileRef = B01127DA1E9EC41200F717A3 /* MamaPapa.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B01127D01E9EB8CE00F717A3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B01127D71E9EB9FE00F717A3 /* Sizes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sizes.c; sourceTree = "<group>"; };
 		B01127D81E9EB9FE00F717A3 /* Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sizes.h; sourceTree = "<group>"; };
+		B01127DA1E9EC41200F717A3 /* MamaPapa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MamaPapa.c; sourceTree = "<group>"; };
+		B01127DB1E9EC41200F717A3 /* MamaPapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MamaPapa.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				B01127D01E9EB8CE00F717A3 /* main.c */,
 				B01127D71E9EB9FE00F717A3 /* Sizes.c */,
 				B01127D81E9EB9FE00F717A3 /* Sizes.h */,
+				B01127DA1E9EC41200F717A3 /* MamaPapa.c */,
+				B01127DB1E9EC41200F717A3 /* MamaPapa.h */,
 			);
 			path = TestC;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01127D91E9EB9FE00F717A3 /* Sizes.c in Sources */,
+				B01127DC1E9EC41200F717A3 /* MamaPapa.c in Sources */,
 				B01127D11E9EB8CE00F717A3 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

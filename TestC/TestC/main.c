@@ -9,9 +9,11 @@
 #include <stdio.h>
 
 #include "Sizes.h"
+#include "MamaPapa.h"
 
 int main(int argc, const char * argv[]) {
     printSizes();
+    printMamaPapaForValues(0, 1000, 1);
     
     return 0;
 }
