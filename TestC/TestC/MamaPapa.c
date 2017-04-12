@@ -17,6 +17,7 @@
         printf("# %d: ", iteration); \
     }
 
+//static const char * IDPMama = "mama";
 static const char * const IDPMama = "mama";
 static const char * const IDPPapa = "papa";
 
@@ -27,6 +28,12 @@ void printMamaPapaForValues(int location, int destination, int step) {
         IDPPrintIterationNumber(i);
         printMamaPapaForValue(i);
     }
+    
+//    printf("IDPMama: %s\n", IDPMama);
+//    
+//    IDPMama = "papa";
+//    
+//    printf("IDPMama: %s\n", IDPMama);
 }
 
 static void printMamaPapaForValue(int value) {
