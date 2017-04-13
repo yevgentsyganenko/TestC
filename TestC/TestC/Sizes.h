@@ -11,6 +11,9 @@
 
 #include <stdio.h>
 
+#define IDPPrintTypeSize(type) \
+    printf("Size of %s: %lu\n", #type, sizeof(type));
+
 void printSizes();
 
 #endif /* Sizes_h */

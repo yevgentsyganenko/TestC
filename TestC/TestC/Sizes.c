@@ -8,19 +8,16 @@
 
 #include "Sizes.h"
 
-#define IDPPrintTypeSize(type) \
-    printf("Size of %s: %lu\n", #type, sizeof(type))
-
 void printSizes() {
-    IDPPrintTypeSize(char);
-    IDPPrintTypeSize(int);
-    IDPPrintTypeSize(short);
-    IDPPrintTypeSize(long);
-    IDPPrintTypeSize(float);
-    IDPPrintTypeSize(double);
-    IDPPrintTypeSize(long double);
-    IDPPrintTypeSize(void);
-    IDPPrintTypeSize(void *);
-    IDPPrintTypeSize(int *);
-    IDPPrintTypeSize(long double *);
+    IDPPrintTypeSize(char)
+    IDPPrintTypeSize(int)
+    IDPPrintTypeSize(short)
+    IDPPrintTypeSize(long)
+    IDPPrintTypeSize(float)
+    IDPPrintTypeSize(double)
+    IDPPrintTypeSize(long double)
+    IDPPrintTypeSize(void)
+    IDPPrintTypeSize(void *)
+    IDPPrintTypeSize(int *)
+    IDPPrintTypeSize(long double *)
 }
