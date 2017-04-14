@@ -8,8 +8,8 @@
 
 #include "Bits.h"
 
-static const uint8_t BitsPerByte = 8;
-static const uint8_t Mask = 128;
+static const uint8_t IDPBitsPerByte = 8;
+static const uint8_t IDPMask = 128;
 
 void printBits(void *valueRef, int length);
 void printByte(uint8_t value);
@@ -30,8 +30,8 @@ void printBits(void *ref, int length) {
 }
 
 void printByte(uint8_t value) {
-    for (int i = 0; i < BitsPerByte; i++) {
-        printf("%u", 0 != (Mask & value));
+    for (int i = 0; i < IDPBitsPerByte; i++) {
+        printf("%u", 0 != (IDPMask & value));
         value <<= 1;
     }
 }

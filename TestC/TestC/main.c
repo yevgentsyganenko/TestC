@@ -13,6 +13,7 @@
 #include "Macro.h"
 #include "Struct.h"
 #include "Bits.h"
+#include "Array.h"
 
 IDPGenerateFunction(int, %d);
 IDPGenerateFunction(char, %c);
@@ -34,7 +35,12 @@ int main(int argc, const char * argv[]) {
 //    printOptimizedStructOffsets();
 //    printOptimizedStructWithUnionOffsets();
     
-    printValueBits(8);
+//    printValueBits(8);
+    
+//    IDPArray *array = create();
+//    printf("%lu\n", getLength(array));
 
+    printStructSizes();
+    
     return 0;
 }

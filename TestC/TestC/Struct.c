@@ -13,13 +13,16 @@
 #include "Sizes.h"
 
 #define IDPPrintOffset(element, structType) \
-    printf("Offset of " #element ": %lu", offsetof(struct structType, element));
+    printf("Offset of " #element ": %lu", offsetof(structType, element));
 
 #define IDPPrintOffsetAndSize(element, type, structType) \
     IDPPrintOffset(element, structType) \
     printf(", "); \
     IDPPrintTypeSize(type)
 
+typedef struct IDPStruct IDPStruct;
+typedef struct IDPOptimizedStruct IDPOptimizedStruct;
+typedef struct IDPOptimizedStructWithUnion IDPOptimizedStructWithUnion;
 typedef union IDPUnion IDPUnion;
 
 struct IDPStruct {
@@ -149,6 +152,8 @@ void printOptimizedStructWithUnionOffsets() {
     printf("\n");
 }
 
-void printStructSize() {
-    
+void printStructSizes() {
+    IDPPrintTypeSize(IDPStruct);
+    IDPPrintTypeSize(IDPOptimizedStruct);
+    IDPPrintTypeSize(IDPOptimizedStructWithUnion);
 }
