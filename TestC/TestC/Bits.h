@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-void printBits(int value);
+void printValueBits(int value);
 
 #endif /* Bits_h */

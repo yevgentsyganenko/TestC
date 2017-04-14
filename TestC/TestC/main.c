@@ -12,6 +12,7 @@
 #include "MamaPapa.h"
 #include "Macro.h"
 #include "Struct.h"
+#include "Bits.h"
 
 IDPGenerateFunction(int, %d);
 IDPGenerateFunction(char, %c);
@@ -29,9 +30,11 @@ int main(int argc, const char * argv[]) {
 //    IDPCallGeneratedFunction(double, 3.14)
 //    IDPCallGeneratedFunction(long, 100)
     
-    printStructOffsets();
-    printOptimizedStructOffsets();
-    printOptimizedStructWithUnionOffsets();
+//    printStructOffsets();
+//    printOptimizedStructOffsets();
+//    printOptimizedStructWithUnionOffsets();
     
+    printValueBits(8);
+
     return 0;
 }
