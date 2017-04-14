@@ -29,8 +29,9 @@ int main(int argc, const char * argv[]) {
 //    IDPCallGeneratedFunction(double, 3.14)
 //    IDPCallGeneratedFunction(long, 100)
     
-//    printStructOffsets();
-//    printOptimizedStructOffsets();
+    printStructOffsets();
+    printOptimizedStructOffsets();
+    printOptimizedStructWithUnionOffsets();
     
     return 0;
 }

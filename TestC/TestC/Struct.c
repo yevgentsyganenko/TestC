@@ -20,6 +20,8 @@
     printf(", "); \
     IDPPrintTypeSize(type)
 
+typedef union IDPUnion IDPUnion;
+
 struct IDPStruct {
     bool boolValue1;
     bool boolValue2;
@@ -66,17 +68,33 @@ struct IDPOptimizedStruct {
     int intValue;
 };
 
-union IDPUnion {
-    struct {
-        bool boolValue1;
-        bool boolValue2;
-        bool boolValue3;
-        bool boolValue4;
-        bool boolValue5;
-        bool boolValue6;
-    };
+struct IDPOptimizedStructWithUnion {
+    long long longlongValue;
     
-    char string[10];
+    double doubleValue;
+    
+    char *string;
+    
+    float floatValue;
+    
+    int intValue;
+    
+    union IDPUnion {
+        struct {
+            bool boolValue1;
+            bool boolValue2;
+            bool boolValue3;
+            bool boolValue4;
+            bool boolValue5;
+            bool boolValue6;
+        };
+        
+        char string[8];
+    } aUnion;
+    
+    short shortValue1;
+    short shortValue2;
+    short shortValue3;
 };
 
 void printStructOffsets() {
@@ -114,6 +132,20 @@ void printOptimizedStructOffsets() {
     IDPPrintOffsetAndSize(shortValue3, short, IDPOptimizedStruct)
     IDPPrintOffsetAndSize(floatValue, float, IDPOptimizedStruct)
     IDPPrintOffsetAndSize(intValue, int, IDPOptimizedStruct)
+    printf("\n");
+}
+
+void printOptimizedStructWithUnionOffsets() {
+    printf("IDPOptimizedStructWithUnion offsets:\n");
+    IDPPrintOffsetAndSize(longlongValue, long long, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(doubleValue, double, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(string, char *, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(floatValue, float, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(intValue, int, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(aUnion, IDPUnion, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(shortValue1, short, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(shortValue2, short, IDPOptimizedStructWithUnion)
+    IDPPrintOffsetAndSize(shortValue3, short, IDPOptimizedStructWithUnion)
     printf("\n");
 }
 

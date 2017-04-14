@@ -13,5 +13,6 @@
 
 void printStructOffsets();
 void printOptimizedStructOffsets();
+void printOptimizedStructWithUnionOffsets();
 
 #endif /* Struct_h */
